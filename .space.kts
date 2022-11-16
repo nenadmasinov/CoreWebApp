@@ -10,7 +10,7 @@ job(".NET Core desktop. Build, publish"){
         shellScript {
             content = """
                 echo Run build...
-                dotnet build
+                dotnet build ./WebApp
                 echo Publish NuGet package...
                 chmod +x publish.sh
                 ./publish.sh
